@@ -36,7 +36,9 @@ Holdings shows five sample assets across equity, hybrid and debt, values based o
 
 ## 6. Manual entry and corrections
 
-**Prototype:** The entry toggle implies adding investments manually; production behavior is not backed by a server.
+**Prototype:** “Add manually” offers a statement upload/photo mockup for CAS (PDF), CSV or screenshot, a bundled sample statement, and a “See the error state” path. A typed holding form captures fund/stock name, asset class, units/shares, current price, total paid and purchase date. The UI says typed holdings live in React session state only; nothing is stored. No actual user file is uploaded or parsed in production infrastructure.
+
+**Production requirement:** Capture only minimum fields; validate date, amount, units, currency and instrument; distinguish user-entered values; permit correction and deletion with audit history; and explain the effect on derived metrics. If statement upload is selected, define secure transfer, supported formats, malware scanning, extraction validation, retention and deletion before release. Do not accept credentials or trading secrets.
 
 **Production requirement:** Capture only minimum fields; validate date, amount, units, currency and instrument; distinguish user-entered values; permit correction and deletion with audit history; and explain the effect on derived metrics. Do not accept credentials or trading secrets.
 
