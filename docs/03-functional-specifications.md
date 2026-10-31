@@ -32,6 +32,8 @@ Holdings shows five sample assets across equity, hybrid and debt, values based o
 
 **Prototype:** Returns view shows total value, invested amount, gain, XIRR, CAGR, measured swing, realised/unrealised gains, holding-period labels and daily history. It describes long/short holding periods but explicitly says this is not tax computation. Allocation groups by asset class, fund house or sector and says shares divide group value by portfolio value. Benchmark comparisons and a performance score are clickable concepts in the sample app.
 
+**Prototype:** Benchmark screen offers 1-year, 3-year and since-start periods, whole portfolio and per-holding comparisons. Sample uses saved demo index levels and explicitly says a live index display needs a licensed feed. A 61/100 performance score shows four components (recorded return 35%, asset-class spread 25%, steadiness 20%, time invested 20%) and component subscores; the screen says it is not an investment rating or peer comparison. The home Tax section says tax is not part of this prototype. 
+
 **Production requirement:** Publish precise definitions, supported instruments, periods, treatment of cash flows, fees, taxes, missing NAVs, corporate actions, price source and rounding. Benchmark availability and suitability require approved data licensing and methodology. Treat score as out of MVP unless independently validated, explainable and approved. Do not infer tax due.
 
 ## 6. Manual entry and corrections
